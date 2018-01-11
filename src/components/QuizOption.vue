@@ -1,8 +1,8 @@
 <template>
   <label :class="{
     'option': true,
-    'option-true': option.type == 'true',
-    'option-false': option.type == 'false',
+    'option-rajoy': option.type == 'rajoy',
+    'option-homer': option.type == 'homer',
     'disabled': disabled,
     'selected': selected,
     'option-is-correct': option.points > 0 && selected,
@@ -16,8 +16,8 @@
       :disabled="disabled"
       @change="$emit('change', option)" />
 
-      <True v-if="option.type == 'true'" />
-      <False v-if="option.type == 'false'" />
+      <Cigar v-if="option.type == 'rajoy'" />
+      <Doughnut v-if="option.type == 'homer'" />
 
       {{ option.name }}
   </label>
@@ -26,6 +26,8 @@
 <script>
 import True from '../assets/images/true.svg'
 import False from '../assets/images/false.svg'
+import Doughnut from '../assets/images/doughnut.svg'
+import Cigar from '../assets/images/cigar.svg'
 
 export default {
   name: 'quiz-option',
@@ -39,7 +41,9 @@ export default {
 
   components: {
     True,
-    False
+    False,
+    Doughnut,
+    Cigar
   }
 }
 </script>
@@ -86,12 +90,12 @@ input {
   }
 }
 
-.option-true {
-  background: $true-gradient;
+.option-rajoy {
+  background: $rajoy-gradient;
 }
 
-.option-false {
-  background: $false-gradient;
+.option-homer {
+  background: $homer-gradient;
 }
 
 .disabled {
