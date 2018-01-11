@@ -4,7 +4,11 @@
     <h3 class="intro-heading">
       <img src="../assets/images/rajoy.jpg" alt="Mariano Rajoy" class="intro-image intro-image-rajoy" />
       <img src="../assets/images/homer.jpg" alt="Homer Simpson" class="intro-image intro-image-homer" />
-      <span class="intro-heading-text">Mariano Rajoy o Homer Simpson?</span>
+      <span class="intro-heading-text">
+        <span class="intro-heading-text-mariano">Mariano Rajoy</span>
+        <span class="intro-heading-text-or">o</span>
+        <span class="intro-heading-text-homer">Homer Simpson?</span>
+      </span>
     </h3>
     <h2 class="intro-subheading">Qui ho va dir?</h2>
     <p class="intro-description">...</p>
@@ -32,7 +36,7 @@ export default {
   font-size: 4rem;
   position: relative;
   text-shadow: 4px 4px 0 black;
-  line-height: 1.25;
+  line-height: 1.1;
   margin: 2rem auto;
   position: relative;
   max-width: 1000px;
@@ -113,6 +117,26 @@ export default {
 
     p {
       font-size: 1.25rem;
+    }
+  }
+}
+
+@media (min-width: 1220px) {
+  .intro {
+    &-heading {
+      padding-top: 250px;
+    }
+
+    &-image {
+      &-rajoy {
+        height: 300px;
+        left: 200px;
+      }
+
+      &-homer {
+        height: 300px;
+        right: 200px;
+      }
     }
   }
 }
