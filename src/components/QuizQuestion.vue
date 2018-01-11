@@ -4,7 +4,7 @@
       <div class="question">
         <div class="question-image" :style="'background-image: url(static/img/questions/' + question.id + '.jpg)'"></div>
         <div class="question-badge" v-if="question.badge"><span>{{ question.badge }}</span></div>
-        <h3>{{ question.name }}</h3>
+        <h3>&ldquo;{{ question.name }}&rdquo;</h3>
 
         <div class="columns question-options">
           <div class="column" v-for="option in question.options">
@@ -129,6 +129,7 @@ export default {
     padding: 0.5rem 0;
     line-height: 1.25;
     margin-bottom: 1rem;
+    text-align: center;
   }
 
   &-badge {
