@@ -119,7 +119,7 @@ export default {
   color: $text-color-dark;
   border-radius: 10px;
   padding: 1.5rem;
-  box-shadow: 0 4px 40px -5px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 4px 40px -5px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 
   h3 {
