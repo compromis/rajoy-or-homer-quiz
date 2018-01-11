@@ -3,42 +3,42 @@
   "questions": [
     {
       "id": 1,
-      "name": "El PP se lía con las ayudas a la caridad y pide menos de las presupuestadas por el Consell",
+      "name": "A veces la mejor decisión es no tomar ninguna decisión, que también es tomar una decisión.",
       "message": "Encara que sone impossible, els populars van presentar una esmena als Pressupostos de la Generalitat per a 2018 en la qual reclamaven 270.000 euros per a Cáritas, quan el Consell ha pressupostat 479.000 euros per aquesta entitat.",
       "options": [
         {
-          "name": "Vertader",
+          "name": "Mariano Rajoy",
           "message": "Per desgràcia, així va ser...",
           "points": 1,
-          "type": "true",
+          "type": "rajoy",
           "gif": "https://media3.giphy.com/media/1332tmUf9Myo4o/giphy.gif"
         },
         {
-          "name": "Fals",
+          "name": "Homer Simpson",
           "message": "Per desgràcia, així va ser...",
           "points": 0,
-          "type": "false",
+          "type": "homer",
           "gif": "https://media3.giphy.com/media/aWPGuTlDqq2yc/giphy.gif"
         }
       ]
     },
     {
       "id": 2,
-      "name": "La conselleria de Educació cierra aulas en los centros concertados.",
+      "name": "Somos sentimientos y tenemos seres humanos.",
       "message": "La Conselleria NO tanca aules ni unitats de la concertada, estableix concerts allà on no arriba la pública. Els pares tenen llibertat per a triar el centre d'estudis dels seus fills.",
       "options": [
         {
-          "name": "Cert!",
+          "name": "Mariano Rajoy",
           "message": "Fals!",
           "points": 0,
-          "type": "true",
+          "type": "rajoy",
           "gif": "https://media.giphy.com/media/l3vR71pwNTO4dJh3q/giphy.gif"
         },
         {
-          "name": "Quina trola!",
+          "name": "Homer Simpson",
           "message": "Correcte!",
           "points": 1,
-          "type": "false",
+          "type": "homer",
           "gif": "https://media3.giphy.com/media/l3vR5UgInxQW8wK6k/giphy.gif"
         }
       ]
