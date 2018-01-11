@@ -1,13 +1,17 @@
 <template>
-  <div class="quizz-wrapper">
-    <app-header />
-    <quiz-intro />
-    <true-false-quiz :questions="questions" :results="results" />
-    <app-footer />
+  <div>
+    <background />
+    <div class="quizz-wrapper">
+      <app-header />
+      <quiz-intro />
+      <true-false-quiz :questions="questions" :results="results" />
+      <app-footer />
+    </div>
   </div>
 </template>
 
 <script>
+import Background from './components/Background'
 import AppHeader from './components/AppHeader'
 import AppFooter from './components/AppFooter'
 import QuizIntro from './components/QuizIntro'
@@ -18,6 +22,7 @@ export default {
   name: 'quiz',
 
   components: {
+    Background,
     AppHeader,
     AppFooter,
     QuizIntro,
@@ -47,11 +52,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $text-color;
-  background-image: url(./assets/images/background.jpg);
   background-color: $background;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   font-size: 100%;
 }
 
@@ -75,5 +76,10 @@ body {
          url('https://compromis.net/wp-content/themes/Compromis/fonts/akkurat-bold-webfont.svg#Akkurat-BoldRegular') format('svg');
     font-weight: bold;
     font-style: normal;
+}
+
+.quizz-wrapper {
+  position: relative;
+  z-index: 2;
 }
 </style>
