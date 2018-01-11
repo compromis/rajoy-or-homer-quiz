@@ -1,6 +1,6 @@
-# Compromis Fake News Quiz
+# Compromis Rajoy or Homer Simpson
 
-> A vue.js quiz app to spot the fake news
+> A vue.js quiz app to guess who said the phrase: Homer Simpson or Spanish President Mariano Rajoy
 
 ## Build Setup
 
