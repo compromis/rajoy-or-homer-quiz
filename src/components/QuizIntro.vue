@@ -1,38 +1,15 @@
 <template>
   <section class="intro container">
     <p><span class="intro-flair">QUIZ</span></p>
-    <div class="columns intro-icons">
-      <div class="column intro-icon-true is-hidden-mobile">
-        <True />
-      </div>
-      <div class="column">
-        <Newspaper />
-      </div>
-      <div class="column intro-icon-false is-hidden-mobile">
-        <False />
-      </div>
-    </div>
-    <h1 class="intro-heading">FAKE NEWS</h1>
-    <h2 class="intro-subheading">N'ets inmune?</h2>
+    <h3 class="intro-heading">Mariano Rajoy o Homer Simpson?</h3>
     <p class="intro-description">Ets dels qui pensen que només els “cunyaos” són carnassa de fake news i que estàs prou informat per a diferenciar entre una notícia falsa i una que no ho és? Posa't a prova en el següent quiz!</p>
-    <p class="intro-note"><strong>Avís:</strong> Encara que ho semble, estes notícies no van ser publicades el Dia dels Innocents</p>
     <p class="intro-action"><a href="#q1" v-scroll-to="'#q1'">Comença</a></p>
   </section>
 </template>
 
 <script>
-import Newspaper from '../assets/images/newspaper.svg'
-import True from '../assets/images/true.svg'
-import False from '../assets/images/false.svg'
-
 export default {
-  name: 'quiz-intro',
-
-  components: {
-    Newspaper,
-    True,
-    False
-  }
+  name: 'quiz-intro'
 }
 </script>
 
@@ -46,11 +23,11 @@ export default {
 
 .intro-heading {
   font-family: $font-intro;
-  font-size: 5rem;
+  color: $secondary-color;
+  font-size: 4rem;
   position: relative;
-  text-shadow: 10px 10px 0 $secondary-color;
-  transform: skew(0deg, -10deg);
-  line-height: 1;
+  text-shadow: 4px 4px 0 black;
+  line-height: 1.25;
   margin: 2rem 0;
 }
 
@@ -62,7 +39,7 @@ export default {
 }
 
 .intro-flair {
-  border: 1px $white solid;
+  border: 1px $text-color solid;
   padding: 0.25rem 1rem;
   border-radius: 20px;
   opacity: 0.75;
@@ -102,14 +79,14 @@ export default {
   margin-top: 2rem;
 
   a {
-    color: #fff;
-    border: 2px #fff solid;
+    color: $text-color;
+    border: 2px $text-color solid;
     border-radius: 30px;
     padding: 0.5rem 2rem;
     transition: 0.25s ease-in-out;
 
     &:hover {
-      background: #fff;
+      background: $text-color;
       color: $background;
     }
   }
