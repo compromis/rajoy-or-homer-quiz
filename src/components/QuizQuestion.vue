@@ -116,7 +116,6 @@ export default {
 
 .question {
   background: $white;
-  background-image: url(../assets/images/texture.jpg);
   color: $text-color-dark;
   border-radius: 10px;
   padding: 1.5rem;
