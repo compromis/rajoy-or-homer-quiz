@@ -28,7 +28,7 @@ export default {
 
   data () {
     return {
-      tweet: 'Fake News! Posa\'t a prova amb este quiz'
+      tweet: 'QUIZ: Frase de Rajoy o Homer Simpson? Qui ho va dir?'
     }
   }
 }
