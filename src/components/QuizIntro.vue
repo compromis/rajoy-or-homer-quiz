@@ -36,8 +36,8 @@ export default {
   font-size: 4rem;
   position: relative;
   text-shadow: 4px 4px 0 black;
-  line-height: 1.1;
-  margin: 2rem auto;
+  line-height: 1;
+  margin: 0 auto 2rem auto;
   position: relative;
   max-width: 1000px;
 
@@ -53,6 +53,7 @@ export default {
   z-index: 10;
   border: 10px white solid;
   box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
+  opacity: 0.75;
 
   &-rajoy {
     left: -120px;
@@ -90,6 +91,7 @@ export default {
   margin-top: 2rem;
 
   a {
+    background: rgba(161, 211, 243, 0.5);
     color: $text-color;
     border: 2px $text-color solid;
     border-radius: 30px;
@@ -109,10 +111,15 @@ export default {
 
     &-heading {
       font-size: 7rem;
+      line-height: 1.1;
     }
 
     &-subheading {
       font-size: 2.5rem;
+    }
+
+    &-image {
+      opacity: 1;
     }
 
     p {

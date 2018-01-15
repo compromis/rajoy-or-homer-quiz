@@ -30,7 +30,6 @@ export default {
         window.requestAnimationFrame(function () {
           if (self.last_known_scroll_position < 600) {
             self.zoom = 1 + (self.last_known_scroll_position * 0.25 / 600)
-            console.log(self.zoom)
           }
 
           self.ticking = false
