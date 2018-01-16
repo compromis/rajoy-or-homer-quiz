@@ -211,17 +211,6 @@ export default {
   background: lighten($false-color-start, 15%);
 }
 
-.slide-enter-active, .slide-leave-active {
-  transition: opacity .5s;
-  height: auto;
-  overflow: hidden;
-}
-.slide-enter, .slide-leave-to {
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
-}
-
 @media (min-width: 769px) {
   .question {
     h3 {
