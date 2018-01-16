@@ -6,6 +6,11 @@
       </a>
     </div>
     <div id="narbarSocialPlugins" class="navbar-menu">
+      <div class="navbar-start">
+        <a href="#" @click.prevent="toggleArchive">
+          Quizzes
+        </a>
+      </div>
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="field is-grouped">
@@ -19,16 +24,36 @@
         </div>
       </div>
     </div>
+    <transition name="slide">
+      <quiz-archive v-show="archiveShown" />
+    </transition>
   </header>
 </template>
 
 <script>
+import QuizArchive from './QuizArchive'
+
 export default {
   name: 'app-header',
 
+  components: {
+    QuizArchive
+  },
+
   data () {
     return {
+      archiveShown: false,
       tweet: 'QUIZ: Frase de Rajoy o Homer Simpson? Qui ho va dir?'
+    }
+  },
+
+  methods: {
+    toggleArchive () {
+      if (this.archiveShown) {
+        this.archiveShown = false
+      } else {
+        this.archiveShown = true
+      }
     }
   }
 }
