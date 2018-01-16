@@ -41,7 +41,8 @@ export default {
   top: 52px;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.75);
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 80%);
 
   ul {
     list-style: none;
