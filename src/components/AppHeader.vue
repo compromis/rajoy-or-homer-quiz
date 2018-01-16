@@ -7,8 +7,11 @@
     </div>
     <div id="narbarSocialPlugins" class="navbar-menu">
       <div class="navbar-start">
-        <a href="#" @click.prevent="toggleArchive">
+        <a href="#" @click.prevent="toggleArchive" class="quiz-archive-link">
           Quizzes
+          <span :class="{ 'chevron': true, 'chevron-open': archiveShown }">
+            <Chevron />
+          </span>
         </a>
       </div>
       <div class="navbar-end">
@@ -32,12 +35,14 @@
 
 <script>
 import QuizArchive from './QuizArchive'
+import Chevron from '../assets/images/chevron.svg'
 
 export default {
   name: 'app-header',
 
   components: {
-    QuizArchive
+    QuizArchive,
+    Chevron
   },
 
   data () {
@@ -84,6 +89,27 @@ export default {
     margin-top: 4px;
     margin-bottom: -5px;
   }
+}
+
+.quiz-archive-link {
+  color: #fff;
+  font-size: 1.25rem;
+  margin: 12px 0 0 20px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.chevron svg {
+  position: relative;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.chevron-open svg {
+  transform: rotate(180deg);
 }
 
 @keyframes HeaderOrange {
