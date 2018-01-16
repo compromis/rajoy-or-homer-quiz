@@ -124,6 +124,7 @@ export default {
 
   h3 {
     font-family: $font-headline;
+    font-weight: 700;
     font-size: 1.5rem;
     padding: 0.5rem 0;
     line-height: 1.25;
@@ -146,7 +147,7 @@ export default {
 
   &-image {
     margin: -3rem -3rem 1rem -3rem;
-    height: 200px;
+    height: 220px;
     border-bottom: 5px $secondary-color solid;
     background-size: cover;
   }
@@ -224,7 +225,7 @@ export default {
 @media (min-width: 769px) {
   .question {
     h3 {
-      font-size: 2rem;
+      font-size: 1.75rem;
       padding: 1rem 1.5rem 1.5rem 1.5rem;
     }
   }
